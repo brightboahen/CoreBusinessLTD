@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="dist/css/bootstrap-theme.css" media="screen">
+    <link rel="stylesheet" href="customStyles.css" media="screen">
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="consultancy.html">Educational Consultancy</a></li>
+                    <li><a href="services.html">Training Services</a></li>
+                    <li class="active"><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <a class="navbar-brand" href="#">Russian Version</a>
+            </div>
+        </div>
+    </div>
+    <div class="container advertising">
+        <div class="row">
+            <div class="col-lg-12">
+                <form class="contact_form" action="mail.php" method="post" name="contact_form" target="foo" onsubmit="window.open('','foo','width=400, height=400')">
+                    <ul>
+                        <li>
+                            <h2 class="contact">Contact Me</h2>
+                            <span class="required_notification">* Denotes Required Field</span>
+                        </li>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Sevara Ismailova" required/>
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="me@yahoo.com" required/>
+                            <span class="form_hint">Proper format "name@something.com"</span>
+                        </li>
+                        <li>
+                            <label for="options">Select Subject:</label>
+                            <select id="options">
+                                <option value="enquiry">General Enquiry</option>
+                                <option value="quote">Request A Quote</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="message">Message:</label>
+                            <textarea name="message" cols="40" rows="6" id="message" required=""></textarea>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary" id="submit" type="submit">Submit Form</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <!--<div class="row">-->
+            <!--<div class="col-md-4">-->
+                <!--<img class="img-circle" data-src="Script/holder.js/100x100" style="width: 100px; height: 100px;" alt="100x100">-->
+                <!--<h5>University and course selection</h5>-->
+            <!--</div>-->
+            <!--<div class="col-md-4">-->
+                <!--<img class="img-circle" data-src="Script/holder.js/100x100" style="width: 100px; height: 100px " alt="100x100">-->
+                <!--<h5>Assistance with admissions process</h5>-->
+            <!--</div>-->
+            <!--<div class="col-md-4">-->
+                <!--<img class="img-circle" data-src="Script/holder.js/100x100" style="width: 100px; height: 100px" alt="100x100">-->
+                <!--<h5>Educational counselling</h5>-->
+            <!--</div>-->
+        <!--</div>-->
+        <hr class="featurette-divider">
+        <footer>
+            <a href="#"><span class="icon-twitter"></span></a>
+            <a href="#"><span class="icon-facebook"></span></a>
+            <a href="#"><span class="icon-linkedin"></span></a>
+            <a href="#"><span class="icon-skype"></span></a>
+            <p class="pull-right"><a href="index.html">Back to top</a></p>
+            <p>Core Business Ltd. is an educational consultancy and training services company. <br>
+                Registration No 08384957 England.</p>
+            <p class="pull-right">Design by brightboahen.com &trade; &copy; 2013</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="Script/holder.js"></script>
+    <script src="Script/activeNav.js"></script>
+</body>
+</html>

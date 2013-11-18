@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="One stop shop for educational consultancy and training">
     <title>Home</title>
-    <!--<link rel="stylesheet" href="dist/css/bootstrap.min.css" media="screen">-->
-    <!--<link rel="stylesheet" href="dist/css/bootstrap-theme.min.css" media="screen">-->
     <link rel="stylesheet" href="dist/css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="dist/css/bootstrap-theme.css" media="screen">
     <link rel="stylesheet" href="customStyles.css" media="screen">
     <link rel="stylesheet" href="css/fontello.css">
+    <script>
+        function changeActiveNav()
+        {
+//        var currentNav = document.getElementsByClassName("active");
+//        currentNav.removeClass("active");
+//        param1.addClass("active");
+            console.log("called");
+        }
+    </script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-static-top">
@@ -21,26 +28,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!--<a class="navbar-brand" href="#">Core Business LTD</a>-->
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Educational Consultancy</a></li>
-                    <li><a href="#">Training Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="consultancy.html">Educational Consultancy</a></li>
+                    <li><a href="services.html">Training Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
-                <!--<button type="button" class="btn">ENGLISH/RUSSIAN</button>-->
+                <a class="navbar-brand" href="#">Russian Version</a>
             </div>
         </div>
     </div>
-    <div class="jumbotron jumboCustom">
+    <div class="jumbotron jumboCustom" style="background-image: url('images/bigBen.png')">
         <div class="container">
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-8">
-                    <img src="images/logo.png" style="width: 128px; height: 78px;">
+                    <img src="images/logo.png" style="width: 128px; height: 128px;">
                     <div class="row">
                         <div class="col-md-12">
                             <p class="lead">Educational Consultancy<br> and Training Services</p>
@@ -99,14 +105,12 @@
             <p class="pull-right"><a href="index.html">Back to top</a></p>
             <p>Core Business Ltd. is an educational consultancy and training services company. <br>
             Registration No 08384957 England.</p>
-            <p class="pull-right">A Website by Bright Boahen &trade; &copy;2013</p>
+            <p class="pull-right">Design by brightboahen.com &trade; &copy; 2013</p>
         </footer>
     </div>
-    <!--<div class="container">-->
-        <!--<span class="pull-left">Copyright &copy;2013 Core Business Ltd.</span>-->
-    <!--</div>-->
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
 <script src="Script/holder.js"></script>
+<script src="Script/activeNav.js"></script>
 </body>
 </html>
