@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="dist/css/bootstrap-theme.css" media="screen">
     <link rel="stylesheet" href="customStyles.css" media="screen">
     <link rel="stylesheet" href="css/fontello.css">
+    <script>
+        function selectedOption(){
+            var selectedOpt = document.getElementById("options");
+            if(selectedOpt.options[selectedOpt.selectedIndex].value == "quote")
+            {
+                $(".contact_form li:nth-child(5)").css("display","block");
+                $(".contact_form li:nth-child(6)").css("display","block");
+            }
+            else{
+                $(".contact_form li:nth-child(5)").css("display","none");
+                $(".contact_form li:nth-child(6)").css("display","none");
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-static-top">
@@ -51,10 +65,18 @@
                         </li>
                         <li>
                             <label for="options">Select Subject:</label>
-                            <select id="options">
-                                <option value="enquiry">General Enquiry</option>
-                                <option value="quote">Request A Quote</option>
+                            <select id="options" onchange="selectedOption()">
+                                <option value="enquiry">Enquiry</option>
+                                <option value="quote">Quote</option>
                             </select>
+                        </li>
+                        <li>
+                            <label>Country of origin:</label>
+                            <input type="text" name="country" id="country" placeholder="Kyrgyzstan">
+                        </li>
+                        <li>
+                            <label>Service Required:</label>
+                            <input type="text" name="service" id="service" placeholder="course application">
                         </li>
                         <li>
                             <label for="message">Message:</label>

@@ -121,6 +121,10 @@ body{
 .contact_form li:first-child, .contact_form li:last-child{
     border-bottom: 1px solid #777;
 }
+.contact_form li:nth-child(5), .contact_form li:nth-child(6){
+    display: none;
+    /*visibility: hidden;*/
+}
 .contact_form h2{
     margin: 0;
     display: inline;
