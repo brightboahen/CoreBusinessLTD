@@ -28,6 +28,9 @@ body{
     /*opacity: 0.7;*/
     /*margin-left: 30px;*/
 }
+.contactForm{
+    background: rgba(0,0,0,0.5);
+}
 .extract p{
     font-size: 20px; font-weight: normal; line-height: 30px; color: lightgrey;
 }
@@ -214,3 +217,24 @@ input:required, textarea:required{
 .contact_form input:focus + .form_hint{display: inline;}
 .contact_form input:required:valid + .form_hint{background: #28921f;}
 .contact_form input:required:valid + .form_hint::before{color: #28921f;}
+
+/*custom rules added to bootstrap form*/
+.controlLabel{
+    font-size: 14px;
+    color: #efefef;
+    font-weight: normal;
+}
+.form-control-custom{
+    padding: 10px;
+    margin-top: 10px;
+}
+#service-holder, #country-holder{
+    display: none;
+}
+#service-holder, #country-holder{
+    -webkit-transition: display .15s;
+    -moz-transition: display .25s;
+    -ms-transition: display .25s;
+    -o-transition: display .25s;
+    transition: display .25s;
+}

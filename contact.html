@@ -13,12 +13,12 @@
             var selectedOpt = document.getElementById("options");
             if(selectedOpt.options[selectedOpt.selectedIndex].value == "quote")
             {
-                $(".contact_form li:nth-child(5)").css("display","block");
-                $(".contact_form li:nth-child(6)").css("display","block");
+                $("#country-holder").css("display","block");
+                $("#service-holder").css("display","block");
             }
             else{
-                $(".contact_form li:nth-child(5)").css("display","none");
-                $(".contact_form li:nth-child(6)").css("display","none");
+                $("#country-holder").css("display","none");
+                $("#service-holder").css("display","none");
             }
         }
     </script>
@@ -41,66 +41,111 @@
                     <li><a href="services.html">Training Services</a></li>
                     <li class="active"><a href="contact.html">Contact Us</a></li>
                 </ul>
-                <a class="navbar-brand" href="#">Russian Version</a>
+                <a class="navbar-brand" href="#">Russian</a>
+            </div>
+        </div>
+    </div>
+    <div style="background-image: url('images/O2_1.png')"  class="jumbotron jumboCustom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4 contactForm">
+                    <form class="form-horizontal" role="form">
+                        <label class="lead">Contact Us</label>
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label controlLabel">Name:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-control-custom" id="name" name="name" placeholder="Name" required="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-2 control-label controlLabel">Email:</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control form-control-custom" id="email" name="email" placeholder="Email" required="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label controlLabel" for="options">Options:</label>
+                            <div class="col-sm-10">
+                                <select id="options" class="form-control form-control-custom" onchange="selectedOption()">
+                                    <option value="enquiry">Enquiry</option>
+                                    <option value="quote">Quote</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group" id="country-holder">
+                            <label for="country" class="col-sm-2 control-label controlLabel">Country:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="country" name="country" placeholder="Russia">
+                            </div>
+                        </div>
+                        <div class="form-group" id="service-holder">
+                            <label for="service" class="col-sm-2 control-label controlLabel">Service:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="service" id="service" placeholder="Application">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="col-sm-2 control-label controlLabel">Message:</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3" id="message" required=""></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label controlLabel">Submit:</label>
+                            <div class="col-sm-10">
+                                <button class="btn btn-primary submit" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4"></div>
             </div>
         </div>
     </div>
     <div class="container advertising">
-        <div class="row">
-            <div class="col-lg-12">
-                <form class="contact_form" action="mail.php" method="post" name="contact_form" target="foo" onsubmit="window.open('','foo','width=400, height=400')">
-                    <ul>
-                        <li>
-                            <h2 class="contact">Contact Us</h2>
-                            <span class="required_notification">* Denotes Required Field</span>
-                        </li>
-                        <li>
-                            <label for="name">Name:</label>
-                            <input type="text" name="name" id="name" placeholder="Sevara Ismailova" required/>
-                        </li>
-                        <li>
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" placeholder="me@yahoo.com" required/>
-                            <span class="form_hint">Proper format "name@something.com"</span>
-                        </li>
-                        <li>
-                            <label for="options">Select Subject:</label>
-                            <select id="options" onchange="selectedOption()">
-                                <option value="enquiry">Enquiry</option>
-                                <option value="quote">Quote</option>
-                            </select>
-                        </li>
-                        <li>
-                            <label>Country of origin:</label>
-                            <input type="text" name="country" id="country" placeholder="Kyrgyzstan">
-                        </li>
-                        <li>
-                            <label>Service Required:</label>
-                            <input type="text" name="service" id="service" placeholder="course application">
-                        </li>
-                        <li>
-                            <label for="message">Message:</label>
-                            <textarea name="message" cols="40" rows="6" id="message" required=""></textarea>
-                        </li>
-                        <li>
-                            <button class="btn btn-primary" id="submit" type="submit">Submit Form</button>
-                        </li>
-                    </ul>
-                </form>
-            </div>
-        </div>
         <!--<div class="row">-->
-            <!--<div class="col-md-4">-->
-                <!--<img class="img-circle" data-src="Script/holder.js/100x100" style="width: 100px; height: 100px;" alt="100x100">-->
-                <!--<h5>University and course selection</h5>-->
-            <!--</div>-->
-            <!--<div class="col-md-4">-->
-                <!--<img class="img-circle" data-src="Script/holder.js/100x100" style="width: 100px; height: 100px " alt="100x100">-->
-                <!--<h5>Assistance with admissions process</h5>-->
-            <!--</div>-->
-            <!--<div class="col-md-4">-->
-                <!--<img class="img-circle" data-src="Script/holder.js/100x100" style="width: 100px; height: 100px" alt="100x100">-->
-                <!--<h5>Educational counselling</h5>-->
+            <!--<div class="col-lg-12 col-md-12 col-sm-12">-->
+                <!--<form class="contact_form" action="mail.php" method="post" name="contact_form" target="foo" onsubmit="window.open('','foo','width=400, height=400')">-->
+                    <!--<ul>-->
+                        <!--<li>-->
+                            <!--<h2 class="contact">Contact Us</h2>-->
+                            <!--<span class="required_notification">* Denotes Required Field</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<label for="name">Name:</label>-->
+                            <!--<input type="text" name="name" id="name" placeholder="Sevara Ismailova" required/>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<label for="email">Email:</label>-->
+                            <!--<input type="email" name="email" id="email" placeholder="me@yahoo.com" required/>-->
+                            <!--<span class="form_hint">Proper format "name@something.com"</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<label for="options">Select Subject:</label>-->
+                            <!--<select id="options" onchange="selectedOption()">-->
+                                <!--<option value="enquiry">Enquiry</option>-->
+                                <!--<option value="quote">Quote</option>-->
+                            <!--</select>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<label>Country of origin:</label>-->
+                            <!--<input type="text" name="country" id="country" placeholder="Kyrgyzstan">-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<label>Service Required:</label>-->
+                            <!--<input type="text" name="service" id="service" placeholder="course application">-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<label for="message">Message:</label>-->
+                            <!--<textarea name="message" cols="40" rows="6" id="message" required=""></textarea>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<button class="btn btn-primary" id="submit" type="submit">Submit Form</button>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</form>-->
             <!--</div>-->
         <!--</div>-->
         <hr class="featurette-divider">
@@ -110,8 +155,11 @@
             <a href="#"><span class="icon-linkedin"></span></a>
             <a href="#"><span class="icon-skype"></span></a>
             <p class="pull-right"><a href="index.html">Back to top</a></p>
+            <p>For enquiries, please contact enquiries@corebusinessltd.co.uk</p>
+            <p class="text-info">Skype us: skype address</p>
             <p>Core Business Ltd. is an educational consultancy and training services company. <br>
                 Registration No 08384957 England.</p>
+            <p class="text-info">Photos provided by @curiobizz www.instagram.com/curiobizz</p>
             <p class="pull-right">Design by brightboahen.com &trade; &copy; 2013</p>
         </footer>
     </div>
