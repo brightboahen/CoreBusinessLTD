@@ -32,7 +32,7 @@ body{
     background: rgba(0,0,0,0.5);
 }
 .extract p{
-    font-size: 20px; font-weight: normal; line-height: 30px; color: lightgrey;
+    font-size: 18px; font-weight: normal; line-height: 25px; color: lightgrey;
 }
 .advertising {
     padding-left: 15px;
@@ -70,6 +70,12 @@ body{
     -moz-background-size :100% 100%;
     background-size: 100% 100%;
 
+    -webkit-transition: height .15s;
+    -moz-transition: height .25s;
+    -ms-transition: height .25s;
+    -o-transition: height .25s;
+    transition: height .25s;
+
 }
 .navbar-inverse-custom{
     background-color: #B80000;
@@ -101,12 +107,12 @@ body{
 
 
 /*Form Styling*/
-::-moz-placeholder{
-    color: blue;
-}
-::-webkit-input-placeholder{
-    color: blue;
-}
+/*::-moz-placeholder{*/
+    /*color: blue;*/
+/*}*/
+/*::-webkit-input-placeholder{*/
+    /*color: blue;*/
+/*}*/
 
 *:focus{outline: none;}
 .contact_form h2, .contact_form label{font-family: Georgia, Times, "Times New Roman", serif;}
@@ -184,9 +190,9 @@ button.submit:hover{
 input:required, textarea:required{
     background: #ffffff;
 }
-::-webkit-validation-bubble-message{
-    padding:1em;
-}
+/*::-webkit-validation-bubble-message{*/
+    /*padding:1em;*/
+/*}*/
 .contact_form input:focus:invalid, .contact_form textarea:focus:invalid{
     background: #fff;
     box-shadow: 0 0 5px #d45252;
