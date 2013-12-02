@@ -1,13 +1,15 @@
 <?php
 
-if(isset($_POST['email'])) {
+if(isset($_POST['EMAIL'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
 //    $email_to = "sevara.ismailova@yahoo.co.uk";
-    $email_to = "bridark17@hotmail.com";
+    $email_to = "enquiries@corebusinessltd.co.uk";
     $email_subject = "Contacts (Website)";
-
-
+//    $temp = $_POST['EMAIL'];
+//    $temp .= $_POST['NAME'];
+//    $temp .= $_POST['OPTIONS'];
+//    echo $temp;
     function died($error) {
         // your error code can go here
 
@@ -74,16 +76,19 @@ if(isset($_POST['email'])) {
     }
 
     // validation expected data exists
-    if(!isset($_POST['name']) ||
-        !isset($_POST['email']) ||
-        !isset($_POST['message'])) {
+    if((!isset($_POST['NAME'])) || (!isset($_POST['NAME'])) ||(!isset($_POST['COMMENT'])) ){
         died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
+//    if(!isset($_POST['NAME']) ||
+//        !isset($_POST['EMAIL']) ||
+//        !isset($_POST['MESSAGE'])) {
+//        died('We are sorry, but there appears to be a problem with the form you submitted.');
+//    }
 
-    $first_name = $_POST['name']; // required
-    $email_from = $_POST['email']; // required
-    $comments = $_POST['message']; // required
-
+    $first_name = $_POST['NAME']; // required
+    $email_from = $_POST['EMAIL']; // required
+    $comments = $_POST['COMMENT']; // required
+    $options = $_POST['OPTIONS'];
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
   if(!preg_match($email_exp,$email_from)) {
@@ -109,8 +114,17 @@ if(isset($_POST['email'])) {
 
     $email_message .= "First Name: ".clean_string($first_name)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Options: ".clean_string($options). "\n";
+    if((isset($_POST['country'])) && (isset($_POST['service'])))
+    {
+        $service_required = $_POST['service'];
+        $country = $_POST['country'];
+        $email_message .= "Service required: ".clean_string($service_required)."\n";
+        $email_message .= "Country of residence: ".clean_string($country)."\n";
+    }
     $email_message .= "Comments: ".clean_string($comments)."\n";
 
+echo $email_message;
 
 $headers = "From:mail.delivery@corebusinessltd.co.uk\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
@@ -164,7 +178,7 @@ body {margin: 0px; padding: 0px;}
 <body link="#142065" vlink="#ff0000" alink="#ff0000" text="#000000" style="background: #ffffff; height:180px;">
 <center><div style="position:relative;width:400px;">
 <div id="txt_41" style="position:absolute; left:15px; top:14px; width:374px; height:66px;-moz-box-sizing:border-box;box-sizing:border-box; overflow:hidden;">
-<P class="List-Paragraph-P"><span class="List-Paragraph-C">YOU MASSAGE HAS BEEN SENT SUCCESSFULLY</span></P>
+<P class="List-Paragraph-P"><span class="List-Paragraph-C">YOUR MASSAGE HAS BEEN SENT SUCCESSFULLY</span></P>
 <P class="List-Paragraph-P"><span class="List-Paragraph-C0">Thank you for contacting us. We will be in touch with you very soon.</span></P>
 </div>
 

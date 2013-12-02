@@ -42,6 +42,12 @@
                     <li class="active"><a href="contact.html">Contact Us</a></li>
                 </ul>
                 <a class="navbar-brand" href="Russian/indexRussian.html">Русский</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><span class="icon-twitter"></span></a></li>
+                    <li><a href="#"><span class="icon-facebook"></span></a></li>
+                    <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                    <li><a href="#"><span class="icon-skype"></span></a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -75,27 +81,36 @@
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-8 contactForm">
-                    <form class="form-horizontal" role="form">
+                    <form class="form-horizontal" role="form" action="mail.php" method="POST" target="foo" onsubmit="window.open('','foo','width=400, height=400, menubar=no, status=no,toolbar=no')">
                         <label class="lead">Contact Us</label>
                         <div class="form-group">
                             <label for="name" class="col-sm-2 control-label controlLabel">Name:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control form-control-custom" id="name" name="name" placeholder="Name" required="">
+                                <input type="text" class="form-control form-control-custom" id="name" name="NAME" required="" placeholder="Name">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="email" class="col-sm-2 control-label controlLabel">Email:</label>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control form-control-custom" id="email" name="email" placeholder="Email" required="">
+                                <input type="email" class="form-control form-control-custom" id="email" name="EMAIL" required="" placeholder="Email">
+                                <!--<span class="form_hint">Proper format "name@something.com"</span>-->
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label controlLabel" for="options">Options:</label>
+                            <label for="Institution" class="col-sm-2 control-label controlLabel">Institution:</label>
                             <div class="col-sm-10">
-                                <select id="options" class="form-control" onchange="selectedOption()">
-                                    <option value="enquiry">Enquiry</option>
+                                <input type="text" class="form-control form-control-custom" id="Institution" name="institution" placeholder="University or School name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label controlLabel" for="options">Drop down:</label>
+                            <div class="col-sm-10">
+
+                                <select id="options" name="OPTIONS" class="form-control" onchange="selectedOption()">
+                                    <option value="enquiry" selected ="selected">Enquiry</option>
                                     <option value="quote">Quote</option>
                                 </select>
+                                <!--<span class="form_hint">select for more options</span>-->
                             </div>
                         </div>
                         <div class="form-group" id="country-holder">
@@ -113,13 +128,13 @@
                         <div class="form-group">
                             <label for="message" class="col-sm-2 control-label controlLabel">Message:</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" rows="3" id="message" required=""></textarea>
+                                <textarea class="form-control" rows="3" id="message" name="COMMENT" required=""></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label controlLabel">Submit:</label>
                             <div class="col-sm-10">
-                                <button class="btn btn-primary submit" type="submit">Submit</button>
+                                <input class="btn btn-primary submit" type="submit">Submit</input>
                             </div>
                         </div>
                     </form>
