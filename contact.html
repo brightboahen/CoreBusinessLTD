@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
     <link rel="stylesheet" href="dist/css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="dist/css/bootstrap-theme.css" media="screen">
     <link rel="stylesheet" href="customStyles.css" media="screen">
@@ -41,12 +42,12 @@
                     <li><a href="services.html">Training Services</a></li>
                     <li class="active"><a href="contact.html">Contact Us</a></li>
                 </ul>
-                <a class="navbar-brand" href="Russian/indexRussian.html">Русский</a>
+                <a class="navbar-brand" href="Russian/contactRussian.html">Русский</a>
                 <ul class="nav navbar-nav">
-                    <li><a href="#"><span class="icon-twitter"></span></a></li>
-                    <li><a href="#"><span class="icon-facebook"></span></a></li>
-                    <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                    <li><a href="#"><span class="icon-skype"></span></a></li>
+                    <li><a href="https://twitter.com/CoreBizz"><span class="icon-twitter"></span></a></li>
+                    <li><a href="https://www.facebook.com/pages/Core-Business-Ltd/441944422548420"><span class="icon-facebook"></span></a></li>
+                    <li><a href="http://www.linkedin.com/company/core-business-ltd-?trk=cp_followed_name_core-business-ltd-"><span class="icon-linkedin"></span></a></li>
+                    <!--<li><a href="#"><span class="icon-skype"></span></a></li>-->
                 </ul>
             </div>
         </div>
@@ -80,9 +81,10 @@
             <div class="row">
                 <div class="col-md-2">
                 </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-8 contactForm">
                     <form class="form-horizontal" role="form" action="mail.php" method="POST" target="foo" onsubmit="window.open('','foo','width=400, height=400, menubar=no, status=no,toolbar=no')">
-                        <label class="lead">Contact Us</label>
+                        <label class="lead leadPara">Contact Us</label>
                         <div class="form-group">
                             <label for="name" class="col-sm-2 control-label controlLabel">Name:</label>
                             <div class="col-sm-10">
@@ -132,14 +134,28 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label controlLabel">Submit:</label>
+                            <label class="col-sm-2 control-label controlLabel"></label>
                             <div class="col-sm-10">
-                                <input class="btn btn-primary submit" type="submit">Submit</input>
+                                <button class="btn btn-primary submit" type="submit">Submit</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label controlLabel">Address:</label>
+                            <div class="col-sm-10">
+                                <p class="contact-details">
+                                    Core Business Ltd.<br>
+                                    Kemp House<br>
+                                    152 City Road<br>
+                                    London EC1V 2NX<br>
+                                    United Kingdom<br>
+                                    T: +44 (0)20 3143 3403<br>
+                                    M: +44 (0)77 7146 7711<br>
+                                    E: sevara.ismailova@corebusinessltd.co.uk<br>
+                                </p>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="col-md-2"></div>
             </div>
         </div>
     </div>
@@ -189,13 +205,22 @@
         <!--</div>-->
         <hr class="featurette-divider">
         <footer>
-            <a href="#"><span class="icon-twitter"></span></a>
-            <a href="#"><span class="icon-facebook"></span></a>
-            <a href="#"><span class="icon-linkedin"></span></a>
-            <a href="#"><span class="icon-skype"></span></a>
+            <a href="https://twitter.com/CoreBizz" target="_blank"><span class="icon-twitter"></span></a>
+            <a href="https://www.facebook.com/pages/Core-Business-Ltd/441944422548420" target="_blank"><span class="icon-facebook"></span></a>
+            <a href="http://www.linkedin.com/company/core-business-ltd-?trk=cp_followed_name_core-business-ltd-" target="_blank"><span class="icon-linkedin"></span></a>
             <p class="pull-right"><a href="index.html">Back to top</a></p>
             <p>For enquiries, please contact enquiries@corebusinessltd.co.uk</p>
-            <p class="text-info">Skype us: skype address</p>
+            <p class="text-info">Skype us: admin.corebizz</p>
+            <div id="SkypeButton_Dropdown_admin.corebizz_1">
+                <script type="text/javascript">
+                    Skype.ui({
+                        "name": "dropdown",
+                        "element": "SkypeButton_Dropdown_admin.corebizz_1",
+                        "participants": ["admin.corebizz"],
+                        "imageSize": 32
+                    });
+                </script>
+            </div>
             <p>Core Business Ltd. is an educational consultancy and training services company. <br>
                 Registration No 08384957 England.</p>
             <p class="text-info">Photos provided by @curiobizz www.instagram.com/curiobizz</p>
