@@ -124,7 +124,7 @@ if(isset($_POST['EMAIL'])) {
     }
     $email_message .= "Comments: ".clean_string($comments)."\n";
 
-echo $email_message;
+//echo $email_message;
 
 $headers = "From:mail.delivery@corebusinessltd.co.uk\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
