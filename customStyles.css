@@ -75,11 +75,11 @@ body{
     -moz-background-size :100% 100%;
     background-size: 100% 100%;
 
-    -webkit-transition: height .15s;
-    -moz-transition: height .25s;
-    -ms-transition: height .25s;
-    -o-transition: height .25s;
-    transition: height .25s;
+    /*-webkit-transition: height .15s;*/
+    /*-moz-transition: height .25s;*/
+    /*-ms-transition: height .25s;*/
+    /*-o-transition: height .25s;*/
+    /*transition: height .25s;*/
 
 }
 .navbar-inverse-custom{

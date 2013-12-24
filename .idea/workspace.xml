@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7c6da99-00da-46e3-8599-c1be5bf7275b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Russian/aboutRussian.html" afterPath="$PROJECT_DIR$/Russian/aboutRussian.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consultancy.html" afterPath="$PROJECT_DIR$/consultancy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Russian/consultancyRus.html" afterPath="$PROJECT_DIR$/Russian/consultancyRus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Russian/contactRussian.html" afterPath="$PROJECT_DIR$/Russian/contactRussian.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customStyles.css" afterPath="$PROJECT_DIR$/customStyles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Russian/indexRussian.html" afterPath="$PROJECT_DIR$/Russian/indexRussian.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services.html" afterPath="$PROJECT_DIR$/services.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CoreBusinessLTD.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="623" selection-end="815" vertical-scroll-proportion="-6.25" vertical-offset="30" max-vertical-offset="2325">
+            <state line="12" column="0" selection-start="623" selection-end="815" vertical-scroll-proportion="-0.14201184" vertical-offset="300" max-vertical-offset="2325">
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -92,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexRussian.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="indexRussian.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Russian/indexRussian.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="91" selection-start="830" selection-end="830" vertical-scroll-proportion="0.23076923" vertical-offset="0" max-vertical-offset="2325">
+            <state line="13" column="91" selection-start="830" selection-end="830" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="2325">
               <folding />
             </state>
           </provider>
@@ -123,14 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aboutRussian.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Russian/aboutRussian.html">
+      <file leaf-file-name="customStyles.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customStyles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="91" selection-start="738" selection-end="738" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="2400">
-              <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="73" column="34" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0" vertical-offset="871" max-vertical-offset="3945">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,7 +144,6 @@
         <option value="$PROJECT_DIR$/dist/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/Script/activeNav.js" />
         <option value="$PROJECT_DIR$/mail.php" />
-        <option value="$PROJECT_DIR$/customStyles.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/consultancy.html" />
@@ -168,6 +153,7 @@
         <option value="$PROJECT_DIR$/Russian/contactRussian.html" />
         <option value="$PROJECT_DIR$/Russian/aboutRussian.html" />
         <option value="$PROJECT_DIR$/Russian/indexRussian.html" />
+        <option value="$PROJECT_DIR$/customStyles.css" />
       </list>
     </option>
   </component>
@@ -364,22 +350,6 @@
         <state line="5" column="49" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="3000" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customStyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="20" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.0" vertical-offset="1006" max-vertical-offset="3945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="623" selection-end="815" vertical-scroll-proportion="-6.25" vertical-offset="30" max-vertical-offset="2325">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="91" selection-start="721" selection-end="721" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="2625">
@@ -426,6 +396,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Russian/indexRussian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="91" selection-start="830" selection-end="830" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="2325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Russian/aboutRussian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="91" selection-start="738" selection-end="738" vertical-scroll-proportion="0.21634616" vertical-offset="0" max-vertical-offset="2400">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Russian/contactRussian.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="91" selection-start="738" selection-end="738" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="2400">
@@ -435,20 +422,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Russian/aboutRussian.html">
+    <entry file="file://$PROJECT_DIR$/customStyles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="91" selection-start="738" selection-end="738" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="2400">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h6#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="73" column="34" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0" vertical-offset="871" max-vertical-offset="3945">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Russian/indexRussian.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="91" selection-start="830" selection-end="830" vertical-scroll-proportion="0.23076923" vertical-offset="0" max-vertical-offset="2325">
-          <folding />
+        <state line="12" column="0" selection-start="623" selection-end="815" vertical-scroll-proportion="-0.14201184" vertical-offset="300" max-vertical-offset="2325">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
