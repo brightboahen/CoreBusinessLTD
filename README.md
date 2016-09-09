@@ -1,4 +1,4 @@
 CoreBusinessLTD
 ===============
 
-Commercial website
+Website created with bootstrap and jquery
